@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.DocumentObjectModel-NetCore", "MigraDoc.DocumentObjectModel-NetCore\MigraDoc.DocumentObjectModel-NetCore.csproj", "{E60D75E6-BE5B-4B9A-959B-A62BE39EE0A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.Rendering-NetCore", "MigraDoc.Rendering-NetCore\MigraDoc.Rendering-NetCore.csproj", "{950212A3-75E1-456C-9B8E-A6FFC1785E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.RtfRendering-NetCore", "MigraDoc.RtfRendering-NetCore\MigraDoc.RtfRendering-NetCore.csproj", "{34AA9788-C537-4408-9228-BAC6F878CB8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!PDFSharp", "!PDFSharp", "{4CA0E24F-C362-4A26-A29B-44F443AE1BFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharp.Charting-NetCore", "..\..\PDFsharp\src\PdfSharp.Charting-NetCore\PdfSharp.Charting-NetCore.csproj", "{BD1298EA-3092-4D43-AF85-AE1D407FAF12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharp-NetCore", "..\..\PDFsharp\src\PdfSharp-NetCore\PdfSharp-NetCore.csproj", "{40D47D84-B6CE-4DFE-8FFB-4FD3B0E4126B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E60D75E6-BE5B-4B9A-959B-A62BE39EE0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60D75E6-BE5B-4B9A-959B-A62BE39EE0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60D75E6-BE5B-4B9A-959B-A62BE39EE0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60D75E6-BE5B-4B9A-959B-A62BE39EE0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950212A3-75E1-456C-9B8E-A6FFC1785E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950212A3-75E1-456C-9B8E-A6FFC1785E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950212A3-75E1-456C-9B8E-A6FFC1785E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950212A3-75E1-456C-9B8E-A6FFC1785E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34AA9788-C537-4408-9228-BAC6F878CB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34AA9788-C537-4408-9228-BAC6F878CB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34AA9788-C537-4408-9228-BAC6F878CB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34AA9788-C537-4408-9228-BAC6F878CB8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1298EA-3092-4D43-AF85-AE1D407FAF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1298EA-3092-4D43-AF85-AE1D407FAF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1298EA-3092-4D43-AF85-AE1D407FAF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1298EA-3092-4D43-AF85-AE1D407FAF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D47D84-B6CE-4DFE-8FFB-4FD3B0E4126B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D47D84-B6CE-4DFE-8FFB-4FD3B0E4126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D47D84-B6CE-4DFE-8FFB-4FD3B0E4126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D47D84-B6CE-4DFE-8FFB-4FD3B0E4126B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD1298EA-3092-4D43-AF85-AE1D407FAF12} = {4CA0E24F-C362-4A26-A29B-44F443AE1BFF}
+		{40D47D84-B6CE-4DFE-8FFB-4FD3B0E4126B} = {4CA0E24F-C362-4A26-A29B-44F443AE1BFF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7447322-0C1C-4BF7-A752-BC5264A9A6A9}
+	EndGlobalSection
+EndGlobal

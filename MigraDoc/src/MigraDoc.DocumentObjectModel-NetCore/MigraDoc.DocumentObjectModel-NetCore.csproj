@@ -1,0 +1,186 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD;GDI</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;NETSTANDARD;GDI</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\BookmarkField.cs" link="DocumentObjectModel.Fields\BookmarkField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\DateField.cs" link="DocumentObjectModel.Fields\DateField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\enums\InfoFieldType.cs" link="DocumentObjectModel.Fields\enums\InfoFieldType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\InfoField.cs" link="DocumentObjectModel.Fields\InfoField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\NumericFieldBase.cs" link="DocumentObjectModel.Fields\NumericFieldBase.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\NumPagesField.cs" link="DocumentObjectModel.Fields\NumPagesField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\PageField.cs" link="DocumentObjectModel.Fields\PageField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\PageRefField.cs" link="DocumentObjectModel.Fields\PageRefField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\SectionField.cs" link="DocumentObjectModel.Fields\SectionField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\SectionPagesField.cs" link="DocumentObjectModel.Fields\SectionPagesField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\DomValueDescriptorCollection.cs" link="DocumentObjectModel.Internals\DomValueDescriptorCollection.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\DVAttribute.cs" link="DocumentObjectModel.Internals\DVAttribute.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\GV.cs" link="DocumentObjectModel.Internals\enums\GV.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\VDFlags.cs" link="DocumentObjectModel.Internals\enums\VDFlags.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\INullableValue.cs" link="DocumentObjectModel.Internals\INullableValue.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\Meta.cs" link="DocumentObjectModel.Internals\Meta.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NBool.cs" link="DocumentObjectModel.Internals\NBool.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NDouble.cs" link="DocumentObjectModel.Internals\NDouble.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NEnum.cs" link="DocumentObjectModel.Internals\NEnum.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NInt.cs" link="DocumentObjectModel.Internals\NInt.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NString.cs" link="DocumentObjectModel.Internals\NString.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\ValueDescriptor.cs" link="DocumentObjectModel.Internals\ValueDescriptor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlParser.cs" link="DocumentObjectModel.IO\DdlParser.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlParserException.cs" link="DocumentObjectModel.IO\DdlParserException.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReader.cs" link="DocumentObjectModel.IO\DdlReader.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReaderError.cs" link="DocumentObjectModel.IO\DdlReaderError.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReaderErrors.cs" link="DocumentObjectModel.IO\DdlReaderErrors.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlScanner.cs" link="DocumentObjectModel.IO\DdlScanner.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlWriter.cs" link="DocumentObjectModel.IO\DdlWriter.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\DdlErrorLevel.cs" link="DocumentObjectModel.IO\enums\DdlErrorLevel.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\Symbol.cs" link="DocumentObjectModel.IO\enums\Symbol.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\TokenType.cs" link="DocumentObjectModel.IO\enums\TokenType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\Symbols.cs" link="DocumentObjectModel.IO\Symbols.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Axis.cs" link="DocumentObjectModel.Shapes.Charts\Axis.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\AxisTitle.cs" link="DocumentObjectModel.Shapes.Charts\AxisTitle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Chart.cs" link="DocumentObjectModel.Shapes.Charts\Chart.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\ChartObject.cs" link="DocumentObjectModel.Shapes.Charts\ChartObject.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\DataLabel.cs" link="DocumentObjectModel.Shapes.Charts\DataLabel.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\BlankType.cs" link="DocumentObjectModel.Shapes.Charts\enums\BlankType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\ChartType.cs" link="DocumentObjectModel.Shapes.Charts\enums\ChartType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\DataLabelPosition.cs" link="DocumentObjectModel.Shapes.Charts\enums\DataLabelPosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\DataLabelType.cs" link="DocumentObjectModel.Shapes.Charts\enums\DataLabelType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\HorizontalAlignment.cs" link="DocumentObjectModel.Shapes.Charts\enums\HorizontalAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\MarkerStyle.cs" link="DocumentObjectModel.Shapes.Charts\enums\MarkerStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\TickMarkType.cs" link="DocumentObjectModel.Shapes.Charts\enums\TickMarkType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Gridlines.cs" link="DocumentObjectModel.Shapes.Charts\Gridlines.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Legend.cs" link="DocumentObjectModel.Shapes.Charts\Legend.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\PlotArea.cs" link="DocumentObjectModel.Shapes.Charts\PlotArea.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Point.cs" link="DocumentObjectModel.Shapes.Charts\Point.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Series.cs" link="DocumentObjectModel.Shapes.Charts\Series.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\SeriesCollection.cs" link="DocumentObjectModel.Shapes.Charts\SeriesCollection.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\SeriesElements.cs" link="DocumentObjectModel.Shapes.Charts\SeriesElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\TextArea.cs" link="DocumentObjectModel.Shapes.Charts\TextArea.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\TickLabels.cs" link="DocumentObjectModel.Shapes.Charts\TickLabels.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XSeries.cs" link="DocumentObjectModel.Shapes.Charts\XSeries.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XSeriesElements.cs" link="DocumentObjectModel.Shapes.Charts\XSeriesElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XValue.cs" link="DocumentObjectModel.Shapes.Charts\XValue.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XValues.cs" link="DocumentObjectModel.Shapes.Charts\XValues.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Barcode.cs" link="DocumentObjectModel.Shapes\Barcode.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\BarcodeType.cs" link="DocumentObjectModel.Shapes\enums\BarcodeType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\DashStyle.cs" link="DocumentObjectModel.Shapes\enums\DashStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\LineStyle.cs" link="DocumentObjectModel.Shapes\enums\LineStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\RelativeHorizontal.cs" link="DocumentObjectModel.Shapes\enums\RelativeHorizontal.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\RelativeVertical.cs" link="DocumentObjectModel.Shapes\enums\RelativeVertical.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\ShapePosition.cs" link="DocumentObjectModel.Shapes\enums\ShapePosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\TextOrientation.cs" link="DocumentObjectModel.Shapes\enums\TextOrientation.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\WrapStyle.cs" link="DocumentObjectModel.Shapes\enums\WrapStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\FillFormat.cs" link="DocumentObjectModel.Shapes\FillFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Image.cs" link="DocumentObjectModel.Shapes\Image.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\LeftPosition.cs" link="DocumentObjectModel.Shapes\LeftPosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\LineFormat.cs" link="DocumentObjectModel.Shapes\LineFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\PictureFormat.cs" link="DocumentObjectModel.Shapes\PictureFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Shape.cs" link="DocumentObjectModel.Shapes\Shape.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\TextFrame.cs" link="DocumentObjectModel.Shapes\TextFrame.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\TopPosition.cs" link="DocumentObjectModel.Shapes\TopPosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\WrapFormat.cs" link="DocumentObjectModel.Shapes\WrapFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Cell.cs" link="DocumentObjectModel.Tables\Cell.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Cells.cs" link="DocumentObjectModel.Tables\Cells.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Column.cs" link="DocumentObjectModel.Tables\Column.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Columns.cs" link="DocumentObjectModel.Tables\Columns.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\Edge.cs" link="DocumentObjectModel.Tables\enums\Edge.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RoundedCorner.cs" link="DocumentObjectModel.Tables\enums\RoundedCorner.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RowAlignment.cs" link="DocumentObjectModel.Tables\enums\RowAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RowHeightRule.cs" link="DocumentObjectModel.Tables\enums\RowHeightRule.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\VerticalAlignment.cs" link="DocumentObjectModel.Tables\enums\VerticalAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Row.cs" link="DocumentObjectModel.Tables\Row.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Rows.cs" link="DocumentObjectModel.Tables\Rows.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Table.cs" link="DocumentObjectModel.Tables\Table.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\TableFormatter.cs" link="DocumentObjectModel.Tables\TableFormatter.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\CellComparer.cs" link="DocumentObjectModel.Visitors\CellComparer.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\DocumentObjectVisitor.cs" link="DocumentObjectModel.Visitors\DocumentObjectVisitor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\IDomVisitable.cs" link="DocumentObjectModel.Visitors\IDomVisitable.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\MergedCellList.cs" link="DocumentObjectModel.Visitors\MergedCellList.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\PdfFlattenVisitor.cs" link="DocumentObjectModel.Visitors\PdfFlattenVisitor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\RtfFlattenVisitor.cs" link="DocumentObjectModel.Visitors\RtfFlattenVisitor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\VisitorBase.cs" link="DocumentObjectModel.Visitors\VisitorBase.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Border.cs" link="DocumentObjectModel\Border.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Borders.cs" link="DocumentObjectModel\Borders.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Character.cs" link="DocumentObjectModel\Character.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Chars.cs" link="DocumentObjectModel\Chars.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Color.cs" link="DocumentObjectModel\Color.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Colors.cs" link="DocumentObjectModel\Colors.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DdlEncoder.cs" link="DocumentObjectModel\DdlEncoder.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DdlVisibleAttribute.cs" link="DocumentObjectModel\DdlVisibleAttribute.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Document.cs" link="DocumentObjectModel\Document.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentElements.cs" link="DocumentObjectModel\DocumentElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentInfo.cs" link="DocumentObjectModel\DocumentInfo.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentObject.cs" link="DocumentObjectModel\DocumentObject.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentObjectCollection.cs" link="DocumentObjectModel\DocumentObjectCollection.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentRelations.cs" link="DocumentObjectModel\DocumentRelations.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DomSR.cs" link="DocumentObjectModel\DomSR.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BorderStyle.cs" link="DocumentObjectModel\enums\BorderStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BorderType.cs" link="DocumentObjectModel\enums\BorderType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BreakType.cs" link="DocumentObjectModel\enums\BreakType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ColorName.cs" link="DocumentObjectModel\enums\ColorName.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\DomMsgID.cs" link="DocumentObjectModel\enums\DomMsgID.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FontProperties.cs" link="DocumentObjectModel\enums\FontProperties.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteLocation.cs" link="DocumentObjectModel\enums\FootnoteLocation.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteNumberingRule.cs" link="DocumentObjectModel\enums\FootnoteNumberingRule.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteNumberStyle.cs" link="DocumentObjectModel\enums\FootnoteNumberStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\HeaderFooterIndex.cs" link="DocumentObjectModel\enums\HeaderFooterIndex.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\HyperlinkType.cs" link="DocumentObjectModel\enums\HyperlinkType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\LineSpacingRule.cs" link="DocumentObjectModel\enums\LineSpacingRule.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ListType.cs" link="DocumentObjectModel\enums\ListType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Orientation.cs" link="DocumentObjectModel\enums\Orientation.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\OutlineLevel.cs" link="DocumentObjectModel\enums\OutlineLevel.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\PageFormat.cs" link="DocumentObjectModel\enums\PageFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ParagraphAlignment.cs" link="DocumentObjectModel\enums\ParagraphAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\StyleType.cs" link="DocumentObjectModel\enums\StyleType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\SymbolName.cs" link="DocumentObjectModel\enums\SymbolName.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TabAlignment.cs" link="DocumentObjectModel\enums\TabAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TabLeader.cs" link="DocumentObjectModel\enums\TabLeader.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TextFormat.cs" link="DocumentObjectModel\enums\TextFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Underline.cs" link="DocumentObjectModel\enums\Underline.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\UnitType.cs" link="DocumentObjectModel\enums\UnitType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Font.cs" link="DocumentObjectModel\Font.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Footnote.cs" link="DocumentObjectModel\Footnote.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\FormattedText.cs" link="DocumentObjectModel\FormattedText.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\HeaderFooter.cs" link="DocumentObjectModel\HeaderFooter.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\HeadersFooters.cs" link="DocumentObjectModel\HeadersFooters.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Hyperlink.cs" link="DocumentObjectModel\Hyperlink.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ImageHelper.cs" link="DocumentObjectModel\ImageHelper.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ListInfo.cs" link="DocumentObjectModel\ListInfo.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\PageBreak.cs" link="DocumentObjectModel\PageBreak.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\PageSetup.cs" link="DocumentObjectModel\PageSetup.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Paragraph.cs" link="DocumentObjectModel\Paragraph.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ParagraphElements.cs" link="DocumentObjectModel\ParagraphElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ParagraphFormat.cs" link="DocumentObjectModel\ParagraphFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Section.cs" link="DocumentObjectModel\Section.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Sections.cs" link="DocumentObjectModel\Sections.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Serializer.cs" link="DocumentObjectModel\Serializer.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Shading.cs" link="DocumentObjectModel\Shading.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Style.cs" link="DocumentObjectModel\Style.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\StyleNames.cs" link="DocumentObjectModel\StyleNames.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Styles.cs" link="DocumentObjectModel\Styles.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\TabStop.cs" link="DocumentObjectModel\TabStop.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\TabStops.cs" link="DocumentObjectModel\TabStops.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Text.cs" link="DocumentObjectModel\Text.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\TextMeasurement_delete.cs" link="DocumentObjectModel\TextMeasurement_delete.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Unit.cs" link="DocumentObjectModel\Unit.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\VersionInfo.cs" link="DocumentObjectModel\VersionInfo.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\Properties\ProductVersionInfo.cs" link="Properties\ProductVersionInfo.cs" />
+    <EmbeddedResource Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\Messages.de.restext">
+      <Link>DocumentObjectModel.Resources\Messages.de.restext</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\Messages.restext">
+      <Link>DocumentObjectModel.Resources\Messages.restext</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
